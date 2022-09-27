@@ -1,0 +1,19 @@
+def make_operation(sign, *args):
+	if len(args) == 1:
+		return args
+	elif len(args) == 0:
+		return None
+	if sign == '+':
+		result = 0
+		for num in args[0:]:
+			result += num
+	elif sign == '-':
+		result = 0
+		for num in args[0:]:
+			result -= num
+	elif sign == '*':
+		result = 1
+		for num in args:
+			result *= num
+
+	return result

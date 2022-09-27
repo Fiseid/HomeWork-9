@@ -1,0 +1,9 @@
+
+
+def make_country(name, capital):
+	slovar = {}
+	slovar[name] = capital
+	print(slovar)
+
+make_country('Украина' , 'Киев')
+
